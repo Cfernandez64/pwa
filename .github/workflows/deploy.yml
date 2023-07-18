@@ -1,0 +1,12 @@
+name: deployment action
+run-name: Clementine is learning GitHub Actions
+on:
+  push: 
+    branches:
+      - main
+jobs:
+  deployment:
+    runs-on: infomaniak
+    environment: production
+    steps:
+      - name: deploy
