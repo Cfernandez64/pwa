@@ -10,3 +10,4 @@ jobs:
     environment: production
     steps:
       - name: deploy
+      - run: npm run build
